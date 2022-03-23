@@ -13,11 +13,11 @@ public class CollectionUtil {
         if (list.isEmpty()) {
             return Collections.emptyList();
         }
-        List<List<T>> result = new ArrayList<List<T>>();
-        Queue<T> stack = new LinkedList<T>(list);
+        List<List<T>> result = new ArrayList<>();
+        Queue<T> stack = new LinkedList<>(list);
         int groups = (int) Math.ceil((list.size() * 1.0) / (unit * 1.0));
         for (int i = 0; i < groups; i++) {
-            List<T> eachGroup = new ArrayList<T>();
+            List<T> eachGroup = new ArrayList<>();
             //last group
             if (i == groups - 1) {
                 eachGroup.addAll(stack);
