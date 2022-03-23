@@ -1,4 +1,4 @@
-package com.github.bluedreamteng.tfcommon;
+package io.github.bluedreamteng.tfcommon;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package com.github.bluedreamteng.tfcommon;
+package io.github.bluedreamteng.tfcommon;
 
 import org.junit.Test;
 import org.junit.function.ThrowingRunnable;
