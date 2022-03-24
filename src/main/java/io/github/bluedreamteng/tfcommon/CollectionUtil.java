@@ -2,6 +2,9 @@ package io.github.bluedreamteng.tfcommon;
 
 import java.util.*;
 
+/**
+ * 集合工具类
+ */
 public class CollectionUtil {
     public static<T> List<List<T>> splitList(List<T> list, int unit) {
         if (list == null) {

@@ -16,17 +16,17 @@ public class CollectionUtilTest {
         final List<String> list = null;
         final int unit = 1;
 
-       assertThrows(IllegalArgumentException.class, () -> CollectionUtil.splitList(list,unit));
+        assertThrows(IllegalArgumentException.class, () -> CollectionUtil.splitList(list, unit));
     }
 
     @Test
-    public void splitList_unitLessThanOne_throwIllegalArgumentException(){
+    public void splitList_unitLessThanOne_throwIllegalArgumentException() {
         final List<String> list = new ArrayList<>();
         final int unit = 0;
 
         assertThrows(IllegalArgumentException.class, new ThrowingRunnable() {
             public void run() {
-                CollectionUtil.splitList(list,unit);
+                CollectionUtil.splitList(list, unit);
             }
         });
     }
@@ -38,7 +38,7 @@ public class CollectionUtilTest {
 
         List<List<String>> actualList = CollectionUtil.splitList(list, 1);
 
-        assertEquals(expectedList,actualList);
+        assertEquals(expectedList, actualList);
     }
 
 
@@ -65,8 +65,7 @@ public class CollectionUtilTest {
 
         List<List<String>> actualList = CollectionUtil.splitList(list, unit);
 
-        assertEquals(expectedList,actualList);
-
+        assertEquals(expectedList, actualList);
     }
 
 }
