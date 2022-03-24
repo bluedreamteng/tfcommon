@@ -1,6 +1,6 @@
 package io.github.bluedreamteng.tfcommon;
 
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -23,8 +23,8 @@ public class SqlUtil {
         return result.toString();
     }
 
-    public static String in(String arr) {
-        List<String> list = Collections.singletonList(arr);
+    public static String in(String[] arr) {
+        List<String> list = Arrays.asList(arr);
         return in(list);
     }
 
